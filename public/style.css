@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Permanent+Marker&family=Rubik&display=swap');
+
+/* || BASIC CSS RESET */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body
+{
+    height: 100vh;
+    background-color: #3aafa9;
+}
+
+/* || HEADER */
+
+.title
+{
+    text-align: center;
+    color: #17252a;
+    font-size: 4.3rem;
+    font-family: 'Permanent Marker', cursive;
+    background-image: linear-gradient(rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+
+.info
+{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #17252abb;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* || MAIN */
+
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 10rem);
+}
+
+/* || BOARD */
+
+.board
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 360px;
+    background-color: #1e6d69;
+    box-shadow: 0 0 5px 2px #091c19;
+    border-radius: 5px;
+}
+
+.outer__board
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 330px;
+    border: 2px solid yellow;
+    cursor: cell;
+}
+
+.inner__board
+{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    width: 309px;
+    height: 309px;
+    background-color: rgb(30, 30, 30);
+}
+
+.inner__board div
+{
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+}
+
+/* || BUTTONS */
+
+.buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 30vh;
+}
+
+.button__rec,.button__aga
+{
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: none;
+    width: 15vw;
+    background-color: #ffcb9a;
+    box-shadow: 0px 5px 0 0 #c7a07f;
+    font-family: 'Kanit', sans-serif;
+}
+
+.button__rec
+{
+    color: #ac3b61;
+}
+
+.button__rec:hover
+{
+    color: #ffcb9a;
+    background-color: #ac3b61;
+    box-shadow: 0px 5px 0 0 #7f2b47;
+}
+
+.button__rec:active
+{
+    transform: translateY(5px);
+    box-shadow: none;
+    transition-duration: 0.2s;
+}
+
+.button__aga
+{
+    color: #123c69;
+}
+
+.button__aga:hover
+{
+    color: #ffcb9a;
+    background-color: #123c69;
+    box-shadow: 0px 5px 0 0 #0a233e;
+}
+
+.button__aga:active
+{
+    transform: translateY(5px);
+    box-shadow: none;
+    transition-duration: 0.2s;
+}
+
+/* || RESULT */
+
+.result
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    height: 360px;
+    background-color: #1e6d69;
+    box-shadow: 0 0 5px 2px #091c19;
+    border-radius: 5px;
+    padding: 15px 0 15px 0;
+    font-family: 'Rubik', sans-serif;
+    color: #17252a;
+}
+
+.guess
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid yellow;
+    width: 330px;
+}
+
+.guess__title
+{
+    font-size: 1.7rem;
+}
+.guess__number
+{
+    font-family: "Marker Felt";
+    font-size: 10rem;
+}
+
+.time
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid yellow;
+    width: 330px;
+}
+
+.time__title
+{
+    font-size: 1.5rem;
+}
+.time__number
+{
+    font-size: 2rem;
+}
+
+/* || FOOTER */
+
+.footer
+{
+    background-color: #222629;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    color: #ccd6b5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "a Autobus Omnibus";
+    font-size: 1.3rem;
+    box-shadow: 0 0px 10px 0px #222;
+}
+.falcon
+{
+    color: #ccd6b5;
+    text-decoration: none;
+}
+
+.falcon:hover
+{
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes blink
+{
+    0%   {color: #ccd6b5;}
+    50%  {color: #ccd6b588;}
+    100% {color: #ccd6b5;}
+}
+
+.copywrite:hover
+{
+    cursor: pointer;
+}

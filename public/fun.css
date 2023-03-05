@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Permanent+Marker&family=Rubik&display=swap');
+
+/* || BASIC CSS RESET */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body
+{
+    font-family: "Rubik","sans-serif";
+    position: relative;
+}
+
+.body div
+{
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-left: 10vw;
+}
+
+.body div h2
+{
+    font-size: 2rem;
+    width: 80vw;
+    font-weight: bold;
+    padding-bottom: 0.2rem;
+}
+
+.body div h3
+{
+    font-size: 1.5rem;
+    width: 80vw;
+}
+
+.body div h3 a
+{
+    color: blue;
+    cursor: pointer;
+}
+.body div h3 a:hover
+{
+    color: red;
+    transition-duration: 0.5s;
+}
+.body div h3 a:active
+{
+    color: rgba(255, 0, 0, 0.2);
+    transition-duration: 0.2s;
+}
+.body div .one, .body div .two
+{
+    text-align: justify;
+}
+
+#back
+{
+    font-size: 2rem;
+    top: 1em;
+    left: 1em;
+    background-color: aqua;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    position: fixed;
+}
+
+#back:hover
+{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+#back:active
+{
+    background-color: #00ffff99;
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+}
+
+#back a
+{
+    color: blue;
+    text-decoration: none;
+}
